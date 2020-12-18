@@ -1,3 +1,4 @@
+/*Root stlyes*/
 :root {
   --navHeight: 9.26vh;
   --navActiveOptionWidth: 8vw;
@@ -32,6 +33,7 @@ html {
   font-family: sans-serif;
 }
 
+/*Header stlyes*/
 header {
   height: 100vh;
   background-image: url("../images/901207_8bd1c85819534dcc81d9ce6a45f46797_mv2_d_4096_2160_s_2.jpg");
@@ -115,6 +117,7 @@ header div a button p i.icon {
   text-align: right;
 }
 
+/*Main styles*/
 section {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
@@ -254,6 +257,7 @@ section div h2 {
   align-items: center;
 }
 
+/*Footer styles*/
 footer {
   background-color: #8FAE9A;
   height: var(--navHeight);
