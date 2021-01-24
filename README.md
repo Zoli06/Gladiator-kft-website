@@ -1,1 +1,1 @@
-# Gladiator-kft-website
+Website for Gladiátor Team Kft.

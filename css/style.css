@@ -43,17 +43,22 @@ header {
 }
 
 nav {
-  height: var(--navHeight);
+  position: absolute;
   width: 100%;
+  /* full page height from js*/
+}
+
+nav div {
+  position: sticky;
+  height: var(--navHeight);
   background-color: var(--themeColor);
   opacity: 0.8;
   padding-left: 13.65vw;
-  position: sticky;
   top: 0;
   z-index: 1;
 }
 
-nav a {
+nav div a {
   height: var(--navHeight);
   display: inline-block;
   text-decoration: none;
@@ -61,12 +66,12 @@ nav a {
   margin-right: -5px; /*Deee miiiééért????*/
 }
 
-nav a.active,
+nav div a.active,
 nav a:hover {
   background-color: var(--hoverColor);
 }
 
-nav p {
+nav div p {
   line-height: var(--navHeight);
   font-weight: bold;
   font-size: var(--navFontSize);
@@ -75,7 +80,7 @@ nav p {
 
 header div {
   margin-left: 13.65vw;
-  padding-top: 9.26vh;
+  padding-top: calc(9.26vh + var(--navHeight));
   font-weight: bold;
   color: white;
 }
