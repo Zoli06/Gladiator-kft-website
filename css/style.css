@@ -35,7 +35,7 @@ html {
 
 /*Header stlyes*/
 header {
-  height: 100vh;
+  height: calc(100vh - var(--navHeight));
   background-image: url("../images/901207_8bd1c85819534dcc81d9ce6a45f46797_mv2_d_4096_2160_s_2.jpg");
   background-size: cover;
   background-position: center;
@@ -43,22 +43,15 @@ header {
 }
 
 nav {
-  position: absolute;
-  width: 100%;
-  /* full page height from js*/
-}
-
-nav div {
   position: sticky;
   height: var(--navHeight);
   background-color: var(--themeColor);
-  opacity: 0.8;
   padding-left: 13.65vw;
   top: 0;
   z-index: 1;
 }
 
-nav div a {
+nav a {
   height: var(--navHeight);
   display: inline-block;
   text-decoration: none;
@@ -66,12 +59,12 @@ nav div a {
   margin-right: -5px; /*Deee miiiééért????*/
 }
 
-nav div a.active,
+nav a.active,
 nav a:hover {
   background-color: var(--hoverColor);
 }
 
-nav div p {
+nav p {
   line-height: var(--navHeight);
   font-weight: bold;
   font-size: var(--navFontSize);
@@ -80,7 +73,7 @@ nav div p {
 
 header div {
   margin-left: 13.65vw;
-  padding-top: calc(9.26vh + var(--navHeight));
+  padding-top: 9.26vh;
   font-weight: bold;
   color: white;
 }

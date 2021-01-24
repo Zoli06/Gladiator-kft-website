@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $(".box").height($(".box").width()*0.75);
+  $(".box.map").height($(".box.map").width()*0.75);
 });
