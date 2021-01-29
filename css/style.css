@@ -2,8 +2,8 @@
 :root {
   --navHeight: 9.26vh;
   --navActiveOptionWidth: 8vw;
-  --hoverColor: #556b64;
-  --themeColor: #749a82;
+  --hoverColor: #2a6365;
+  --themeColor: #449368;
   --boxColor: #E8E8E8;
   --navFontSize: 1.25vw;
 }
@@ -257,7 +257,7 @@ section div h2 {
 
 /*Footer styles*/
 footer {
-  background-color: #8FAE9A;
+  background-color: var(--themeColor);
   height: var(--navHeight);
   width: 100%;
   display: flex;
