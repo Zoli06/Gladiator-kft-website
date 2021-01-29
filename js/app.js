@@ -34,7 +34,7 @@ function onScroll() {
   const guidelineValue = $(document).scrollTop();
 
   if ($(document).scrollTop() >= changeIntervalStart && $(document).scrollTop() <= changeIntervalEnd) {
-    $('nav').css({ opacity: projectValue(minOpacity, maxOpacity, changeIntervalStart, changeIntervalEnd, guidelineValue)/*, height:  projectValue(minHeight, maxHeight, changeIntervalStart, changeIntervalEnd, guidelineValue)*/ });
+    $('nav').css({ opacity: projectValue(minOpacity, maxOpacity, changeIntervalStart, changeIntervalEnd, guidelineValue) });
   } else if ($(document).scrollTop() <= changeIntervalStart) {
     $('nav').css({ opacity: maxOpacity })
   } else if ($(document).scrollTop() >= changeIntervalEnd) {

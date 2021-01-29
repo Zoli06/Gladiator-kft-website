@@ -255,6 +255,10 @@ section div h2 {
   align-items: center;
 }
 
+.black-text {
+  color: black !important;
+}
+
 /*Footer styles*/
 footer {
   background-color: var(--themeColor);
