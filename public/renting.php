@@ -26,19 +26,19 @@
 <body>
   <nav>
     <div>
-      <a href="./index.html" class="default">
+      <a href="./index.php" class="default">
         <p>Kezdőlap</p>
       </a>
-      <a href="./renting.html" class="active">
+      <a href="./renting.php" class="active">
         <p>Kölcsönzés</p>
       </a>
-      <a href="pricelist.html">
+      <a href="./pricelist.php">
         <p>Árlista</p>
       </a>
-      <a href="./map.html">
+      <a href="./map.php">
         <p>Térkép</p>
       </a>
-      <a href="#">
+      <a href="./contact.php">
         <p>Kapcsolat</p>
       </a>
     </div>
@@ -49,7 +49,8 @@
     </div>
   </header>
   <section>
-    <div>
+    <div class="wide-div">
+      <h2>Kivonat</h2>
       <div class="box long-text wide">
         <h3>Bérleti feltételek</h3>
         <p class="long-text black-text">
@@ -61,7 +62,7 @@
       <div class="box long-text wide">
         <h3>Kedvezmény</h3>
         <p class="long-text black-text">
-          5 napot meghaladó folyamatos bérlés esetén 10% kedvezmény ,a köv. kitételek mellett.
+          5 napot meghaladó folyamatos bérlés esetén 10% kedvezmény, a köv. kitételek mellett.
           <br />
           Vasárnap díjtalan, hivatalos ünnepnapokra 50% kedvezmény a bérleti díjakból .2 egymást követő ünnepnapra 1 nap bérleti díj fizetendő.
           <br />

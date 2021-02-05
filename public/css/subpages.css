@@ -14,15 +14,22 @@ section {
   padding: 0vw;
 }
 
-section div {
+section div.wide-div {
   width: 100%;
-  padding: 8.52vh 13.65vw !important;
+}
+
+section div.wide-div, .padding-div {
+  padding: 5vmin 13.65vw !important;
+}
+
+.goods-container {
+  padding: 0px 7.45vw 0px 0px !important;
 }
 
 .box.wide {
   height: min-content;
   margin-right: 0px !important;
-  margin-bottom: 8.52vh;
+  margin-bottom: 5vmin;
   width: 100%;
   padding: 2.64vw !important;
 }
@@ -30,4 +37,8 @@ section div {
 .box.wide iframe {
   width: 100%;
   min-height: 60vh;
+}
+
+.small-elements {
+  margin: 0px !important;
 }

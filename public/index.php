@@ -24,19 +24,19 @@
 
 <body>
   <nav>
-      <a href="./index.html" class="default active">
+      <a href="./index.php" class="default active">
         <p>Kezdőlap</p>
       </a>
-      <a href="./renting.html">
+      <a href="./renting.php">
         <p>Kölcsönzés</p>
       </a>
-      <a href="pricelist.html">
+      <a href="./pricelist.php">
         <p>Árlista</p>
       </a>
-      <a href="./map.html">
+      <a href="./map.php">
         <p>Térkép</p>
       </a>
-      <a href="#">
+      <a href="./contact.php">
         <p>Kapcsolat</p>
       </a>
   </nav>
@@ -47,7 +47,7 @@
         Itt mindent megtalálsz: gépkölcsönzés, valamint javítás <br />pénztárcabarát
         áron.
       </p>
-      <a href="#">
+      <a href="./index.php">
         <button>
           <p>Árlista</p>
           <p class="icon"><i class="fas fa-arrow-right"></i></p>
