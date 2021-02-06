@@ -1,6 +1,6 @@
 /*Root stlyes*/
 :root {
-  --navHeight: 9.26vh;
+  --navHeight: 9.26vmin;
   --navActiveOptionWidth: 8vw;
   --hoverColor: #2a6365;
   --themeColor: #449368;
@@ -32,6 +32,11 @@
 
 html {
   font-family: sans-serif;
+}
+
+html { /*disable horizontal scrolling*/
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*Header stlyes*/

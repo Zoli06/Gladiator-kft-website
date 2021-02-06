@@ -1,10 +1,15 @@
 $(document).ready(function () {
   onScroll();
+  callQuickfit();
 });
 
 $(document).scroll(function () {
   onScroll();
 });
+
+$(window).resize(function() {
+  callQuickfit();
+})
 
 function vh(v) {
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -44,4 +49,10 @@ function onScroll() {
 
 function projectValue(minValue, maxValue, changeIntervalStart, changeIntervalEnd, guidelineValue) {
   return maxValue - ((100 / (changeIntervalEnd - changeIntervalStart) * (guidelineValue - changeIntervalStart)) / (100 / (1 - minValue)));
+}
+
+function callQuickfit() {
+  $(".content .goods-container .box h3, footer p").quickfit({
+    max: vw(2)
+  });
 }

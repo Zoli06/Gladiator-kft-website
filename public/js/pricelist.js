@@ -1,11 +1,6 @@
 $(document).ready(function () {
   $(".page-menu .box");
-  callQuickfit();
 });
-
-$(window).resize(function() {
-  callQuickfit();
-})
 
 function selectCategory(element) {
   var name = element.innerText;
@@ -19,10 +14,4 @@ function selectCategory(element) {
     url += '?category=' + name;
   }
   window.location.href = url;
-}
-
-function callQuickfit() {
-  $(".content .goods-container .box h3").quickfit({
-    max: vw(2)
-  });
 }
