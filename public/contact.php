@@ -26,7 +26,7 @@ include('./modules/head.php');
         <div class="small-elements-container">
           <div class="box small-element start">
             <img src="./images/envelope-open-text-solid.svg" class="title-img" />
-            <p class="description">gladiatorteamkft@gmail.com</p>
+            <p class="description protruding-text">gladiatorteamkft@gmail.com</p>
           </div>
           <div class="box small-element end">
             <img src="./images/phone-solid.svg" class="title-img" />

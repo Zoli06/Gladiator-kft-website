@@ -1,0 +1,11 @@
+ErrorDocument 400 http://gladiator-gepkolcsonzo.infinityfreeapp.com/400.php
+
+ErrorDocument 401 http://gladiator-gepkolcsonzo.infinityfreeapp.com/401.php
+
+ErrorDocument 403 http://gladiator-gepkolcsonzo.infinityfreeapp.com/403.php
+
+ErrorDocument 404 http://gladiator-gepkolcsonzo.infinityfreeapp.com/404.php
+
+ErrorDocument 500 http://gladiator-gepkolcsonzo.infinityfreeapp.com/500.php
+
+ErrorDocument 503 http://gladiator-gepkolcsonzo.infinityfreeapp.com/503.php

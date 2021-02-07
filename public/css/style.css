@@ -83,12 +83,12 @@ header div {
 }
 
 header div h1 {
-  font-size: 3.125vw;
+  font-size: 5vmin;
   font-family: "Helvetica";
 }
 
 header div p {
-  font-size: 1.04vw;
+  font-size: 1.5vmin;
   margin-top: 5px;
   opacity: 0.8;
 }
@@ -96,7 +96,7 @@ header div p {
 header div a button {
   margin-top: 2.41vh;
   height: 5.55vmin;
-  width: 12vw;
+  width: 20vmin;
   background-color: var(--themeColor);
   outline: none;
   border: none;
@@ -126,6 +126,10 @@ section {
   padding: 8.52vmin;
 }
 
+section, .hole-container {
+  min-height: calc(100vh - 25vmin - var(--navHeight) * 2);
+}
+
 section div {
   width: min-content;
   display: block;
@@ -134,7 +138,9 @@ section div {
 }
 
 section div h2,
-section h2 {
+section h2,
+section div h2 a,
+section h2 a {
   font-size: 4.16vw;
   text-align: center;
   margin-bottom: 0.78125vmax;
@@ -368,6 +374,14 @@ input[type="reset"] {
   .email p span {
     width: 100% !important;
     margin: 0px !important;
+  }
+
+  .protruding-text {
+    font-size: 1.1vw !important;
+  }
+
+  header div a button p {
+    font-size: 1.75vmin !important;
   }
 }
 
