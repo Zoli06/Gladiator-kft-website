@@ -44,6 +44,30 @@ include('./modules/head.php');
         </div>
       </div>
     </div>
+    <form onsubmit="sendMail()">
+      <div class="wide-div last" style="padding-top: 0px !important;">
+        <h2>Írjon nekünk</h2>
+        <div class="box long-text wide email">
+          <p class="long-text black-text">
+            <span class="first">
+              Név:
+              <input type="text" id="name" />
+              Tárgy:
+              <input type="text" id="subject" />
+            </span>
+            <span class="second" id="message">
+              Üzenet:
+              <textarea></textarea>
+            </span>
+            <span class="third">
+              <input type="reset" />
+            </span>
+            <span class="fourth">
+              <input type="submit" />
+            </span>
+          </p>
+        </div>
+    </form>
   </section>
   <?php
   include('./modules/footer.php');

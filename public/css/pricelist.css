@@ -5,7 +5,7 @@ section .hole-container {
 }
 
 .hole-container div h2 {
-  margin-top: 5vmin !important;
+  margin-top: 5vmin;
 }
 
 h2 {
@@ -18,21 +18,17 @@ h2 {
   padding-left: 7.4vw !important;
 }
 
-.content {
-  border-left: 1px solid #707070;
-  padding: 0;
-}
-
 .goods-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.1vw;;
   width: 100% !important;
   min-width: 62.75vw;
+  float: right;
 }
 
 .content .goods-container .box {
-  padding: 1.46vw 2.135vw !important;
+  padding: 1.46vw 1.825vw !important;
   margin: 0px;
   margin-bottom: 1.1vw;
   display: inline-block;
@@ -54,15 +50,19 @@ h2 {
 
 .content .goods-container .box .img-container img {
   height: fit-content !important;
+  margin-top: .5vw
 }
 
 .content .goods-container .box h3 {
   font-size: 2vw;
-  margin-bottom: 1vw;
+  margin-bottom: .5vw;
+  height: 1.5vw;
 }
 
 .content .goods-container .box p {
-  font-size: 1.3vw;
+  font-size: 1.1vw;
+  width: calc(100% - 1.825vw * 2);
+  text-align: center;
 }
 
 .page-menu .box h3 {
@@ -72,12 +72,14 @@ h2 {
 .page-menu .box {
   padding: 2.4vh 2.45vw !important;
   width: 100%;
-  margin: 0px 0px 8.52vmin 0px !important;
+  margin: 0px 0px 5vmin 0px !important;
   height: min-content;
 }
 
 .page-menu {
   padding-right: 14.3% !important;
+  border-right: 1px solid #707070;
+  float: right;
 }
 
 .page-menu .box p {

@@ -1,15 +1,30 @@
 $(document).ready(function () {
   onScroll();
   callQuickfit();
+  $(".scroll-box.prev-box").click(function () {
+    $('.scrollable-machine-container .box-container').animate({
+      scrollLeft: $('.scrollable-machine-container .box-container').scrollLeft() - 500
+    },
+      300);
+  });
+  
+  $(".scroll-box.next-box").click(function () {
+    $('.scrollable-machine-container .box-container').animate({
+      scrollLeft: $('.scrollable-machine-container .box-container').scrollLeft() + 500
+    },
+      300);
+  });
 });
 
 $(document).scroll(function () {
   onScroll();
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
   callQuickfit();
-})
+});
+
+scrolledMachine = 0;
 
 function vh(v) {
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -52,7 +67,25 @@ function projectValue(minValue, maxValue, changeIntervalStart, changeIntervalEnd
 }
 
 function callQuickfit() {
-  $(".content .goods-container .box h3, footer p").quickfit({
+  $(".scrollable-machine h3, .goods-container .box h3").quickfit({
     max: vw(2)
   });
+}
+
+function redirectToSubpage(machine, path) {
+  path = path.replace('./goods/', '');
+  path = path.slice(0, path.indexOf('/', path.indexOf('/')));
+  window.location.href = window.location.origin + '/pricelist.php?category=' + path + '&scroll=' + machine;
+}
+
+function watchFullText() {
+  $('.long-text.min span').hide();
+  $('.long-text.max').show();
+}
+
+function sendMail() {
+  var name = $('#name').val();
+  var subject = $('#subject').val();
+  var message = $('#message').val();
+  window.open('mailto:gladiatorteamkft@gmail.com?subject=' + subject + '&body=' + message + '%0D%0A%0D%0A' + name);
 }

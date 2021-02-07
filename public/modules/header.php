@@ -7,7 +7,7 @@
       Itt mindent megtalálsz: gépkölcsönzés, valamint javítás <br />pénztárcabarát
       áron.
     </p>
-    <a href="./index.php">
+    <a href="./pricelist.php">
       <button>
         <p>Árlista</p>
         <p class="icon"><i class="fas fa-arrow-right"></i></p>

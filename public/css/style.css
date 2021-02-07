@@ -4,13 +4,13 @@
   --navActiveOptionWidth: 8vw;
   --hoverColor: #2a6365;
   --themeColor: #449368;
-  --boxColor: #E8E8E8;
+  --boxColor: #e8e8e8;
   --navFontSize: 1.25vw;
 }
 
 * {
   box-sizing: border-box;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 @font-face {
@@ -32,9 +32,7 @@
 
 html {
   font-family: sans-serif;
-}
-
-html { /*disable horizontal scrolling*/
+  /*disable horizontal scrolling*/
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -97,7 +95,7 @@ header div p {
 
 header div a button {
   margin-top: 2.41vh;
-  height: 5.55vh;
+  height: 5.55vmin;
   width: 12vw;
   background-color: var(--themeColor);
   outline: none;
@@ -135,7 +133,8 @@ section div {
   margin-right: auto;
 }
 
-section div h2 {
+section div h2,
+section h2 {
   font-size: 4.16vw;
   text-align: center;
   margin-bottom: 0.78125vmax;
@@ -159,8 +158,19 @@ section div h2 {
   position: relative;
 }
 
-.box:not(.last) {
+.box:not(.scrollable-machine):not(.last) {
   margin-right: 4.43vw;
+}
+
+.scrollable-machine {
+  width: calc((100% - 2 * 4.43vw) / 3.5) !important;
+  min-width: calc((100% - 2 * 4.43vw) / 3.5) !important;
+  margin-right: calc((100% - (100% - 2 * 4.43vw)) / 3);
+  cursor: pointer;
+}
+
+.scrollable-machine:hover {
+  background-color: #d9d9d9;
 }
 
 .box.long-text {
@@ -197,7 +207,8 @@ section div h2 {
   align-items: center;
 }
 
-.box img, iframe {
+.box img,
+iframe {
   max-width: 100%;
   max-height: 15.625vw;
 }
@@ -234,7 +245,7 @@ section div h2 {
 
 .box p,
 .box p.long-text {
-  color: #3A3A3A;
+  color: #3a3a3a;
 }
 
 .box p.long-text {
@@ -246,6 +257,7 @@ section div h2 {
   width: 2.1875vw;
   height: 10.32vh;
   display: inline-block;
+  cursor: pointer;
 }
 
 .scroll-box.prev-box {
@@ -259,10 +271,104 @@ section div h2 {
 .box-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .black-text {
   color: black !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.scrollable-machine-container,
+.scrollable-machine-container div {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollable-machine-container .box-container {
+  margin: 0px;
+  overflow-x: scroll;
+  padding-bottom: 1vh;
+}
+
+/* width */
+.scrollable-machine-container .box-container::-webkit-scrollbar {
+  height: 1vmin;
+}
+
+/* Track */
+.scrollable-machine-container .box-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollable-machine-container .box-container::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 0.5vmin;
+}
+
+/* Handle on hover */
+.scrollable-machine-container .box-container::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+
+.email p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  text-align: center !important;
+}
+
+.email p span {
+  width: 98%;
+}
+
+.email p span.second {
+  display: flex;
+  flex-direction: column;
+}
+
+.email p span.second, .email p span.fourth {
+  margin-left: 2%;
+}
+
+.email p span.second textarea {
+  height: 100%;
+}
+
+.wide-div.last {
+  padding-bottom: 0px !important;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin-top: 2vmin;
+}
+
+@media only screen and (max-width: 900px) {
+  .email p {
+    grid-template-columns: 1fr;
+  }
+
+  .email p span {
+    width: 100% !important;
+    margin: 0px !important;
+  }
 }
 
 /*Footer styles*/
@@ -274,6 +380,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.35vw;
+}
+
+footer p {
+  font-size: 1vmax;
 }
 
 footer p a {

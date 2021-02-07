@@ -14,7 +14,7 @@ include('./modules/head.php');
   include('./modules/header.php');
   ?>
   <section>
-    <div class="wide-div">
+    <div class="wide-div last">
       <h2>Kivonat</h2>
       <div class="box long-text wide">
         <h3>Bérleti feltételek</h3>

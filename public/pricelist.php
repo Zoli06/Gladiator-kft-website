@@ -17,53 +17,57 @@ include('./modules/head.php');
   ?>
   <section>
     <div class="hole-container">
-      <div method="get" class="page-menu">
-        <h2>Árak</h2>
-        <div class="box">
-          <?php
-          $mainDir = getcwd() . '\goods';
-          $directories = glob($mainDir . '\*', GLOB_ONLYDIR);
-          $categories = str_replace($mainDir . '\\', '', $directories);
-          if (in_array('Egyéb gépek', $categories)) { //move this value to last
-            array_splice($categories, 1, 1);
-            array_push($categories, 'Egyéb gépek');
-          }
-          $selected = '';
+      <div class="page-menu">
+        <div>
+          <h2>Árak</h2>
+          <div class="box">
+            <?php
 
-          function firstSelected($i)
-          {
-            $GLOBALS['selected'] = $GLOBALS['categories'][0];
-            if ($i == 0) {
-              return ' selected';
-            } else {
-              return '';
+            $mainDir = './goods';
+            $directories = glob($mainDir . '/*');
+            $directories = str_replace($mainDir . '/', '', $directories);
+            $categories = str_replace($mainDir . '/', '', $directories);
+            if (in_array('Egyéb gépek', $categories)) { //move this value to last
+              array_splice($categories, 1, 1);
+              array_push($categories, 'Egyéb gépek');
             }
-          }
+            $selected = '';
 
-          function getSelected($i)
-          {
-            if (isset($_GET['category'])) {
-              $category = htmlspecialchars($_GET['category']);
-              if (in_array($category, $GLOBALS['categories'])) {
-                $GLOBALS['selected'] = $category;
-                if ($category == $GLOBALS['categories'][$i]) {
-                  return ' selected';
+            function firstSelected($i)
+            {
+              $GLOBALS['selected'] = $GLOBALS['categories'][0];
+              if ($i == 0) {
+                return ' selected';
+              } else {
+                return '';
+              }
+            }
+
+            function getSelected($i)
+            {
+              if (isset($_GET['category'])) {
+                $category = htmlspecialchars($_GET['category']);
+                if (in_array($category, $GLOBALS['categories'])) {
+                  $GLOBALS['selected'] = $category;
+                  if ($category == $GLOBALS['categories'][$i]) {
+                    return ' selected';
+                  } else {
+                    return '';
+                  }
                 } else {
-                  return '';
+                  return firstSelected($i);
                 }
               } else {
                 return firstSelected($i);
               }
-            } else {
-              return firstSelected($i);
             }
-          }
 
-          for ($i = 0; $i != count($categories); $i++) {
-            echo ('<p onclick="selectCategory(this)" class="description' . getSelected($i) . '">' . $categories[$i]);
-          }
+            for ($i = 0; $i != count($categories); $i++) {
+              echo ('<p onclick="selectCategory(this)" class="description' . getSelected($i) . '">' . $categories[$i]);
+            }
 
-          ?>
+            ?>
+          </div>
         </div>
       </div>
       <div class="content">
@@ -71,8 +75,8 @@ include('./modules/head.php');
         <div class="goods-container">
           <?php
           $mainDir2 = $mainDir . '/' . $selected;
-          $directories2 = glob($mainDir2 . '\*', GLOB_ONLYDIR);
-          $goods = str_replace($mainDir2 . '\\', '', $directories2);
+          $directories2 = glob($mainDir2 . '/*', GLOB_ONLYDIR);
+          $goods = str_replace($mainDir2 . '/', '', $directories2);
 
           function getLast($i, $goods)
           {

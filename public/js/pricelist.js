@@ -1,17 +1,25 @@
 $(document).ready(function () {
-  $(".page-menu .box");
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const scroll = urlParams.get('scroll')
+  if (scroll != undefined) {
+    try { //if it doesn't find the element, throws error
+      var coordinate = Array.from(document.querySelectorAll('h3'))
+        .find(el => el.textContent == scroll).parentElement.offsetTop;
+
+      setTimeout(() => {
+        $('html').animate({
+          scrollTop: coordinate - $('nav').height()
+        },
+          500);
+      }, 250);
+    }
+
+    catch(e) {}
+  }
 });
 
 function selectCategory(element) {
-  var name = element.innerText;
-  var url = window.location.href;
-  while (url.indexOf('category') > -1) {
-    url = url.slice(url.indexOf('category') - 1, url.indexOf('&', url.indexOf('category')) + 1);
-  }
-  if (url.indexOf('?') > -1) {
-    url += '&category=' + name;
-  } else {
-    url += '?category=' + name;
-  }
+  url = window.location.origin + '/pricelist.php?category=' + element.innerText;
   window.location.href = url;
 }
