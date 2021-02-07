@@ -46,14 +46,14 @@
     <div class="wide-div last">
       <h2>401</h2>
       <div class="box wide">
-        <h3>Ahol a madár se jár.</h3>
-        <p>Ha hiba nem szűnik meg hamarosan, kérlek jelezd nekünk e-mailben!</p>
+        <h3>Ahol a madár se jár..</h3>
+        <p>Ha a hiba nem szűnik meg hamarosan, kérlek jelezd nekünk e-mailben!</p>
       </div>
     </div>
   </section>
   <footer>
     <p>Copyright © <?php echo date("Y"); ?> All rights reserved | This website is made with ♥ by <a target="_blank" href="https://github.com/Zoli06">Zoli06</a></p>
-    <p><a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></p>
+    <p><a href="./privacy-policy.php">Terms of use</a> | <a href="./privacy-policy.php">Privacy Policy</a></p>
   </footer>
 </body>
 
