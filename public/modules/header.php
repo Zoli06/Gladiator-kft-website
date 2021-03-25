@@ -1,11 +1,10 @@
-<header>
+<header <?php if($subpage) echo('class="subpage"')?> >
   <div>
     <h1><?php echo ($text); ?></h1>
     <?php
     if (!$subpage) {
       echo ('<p>
-      Itt mindent megtalálsz: gépkölcsönzés, valamint javítás <br />pénztárcabarát
-      áron.
+      Köszöntjük weboldalunkon!
     </p>
     <a href="./pricelist.php">
       <button>
@@ -16,4 +15,10 @@
     }
     ?>
   </div>
+  <!--<div class="background" style="background-image: url('../images/background2.jpg')"></div>-->
+  <?php
+    /*for($pictures = 6, $i = 1; $i <= $pictures; $i++) {
+      echo('<div class="background" style="background-image: url(\'../images/background' . $i .'.webp\')"></div>');
+    }*/
+  ?>
 </header>

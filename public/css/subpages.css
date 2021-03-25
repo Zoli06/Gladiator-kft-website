@@ -22,10 +22,6 @@ section div.wide-div, .padding-div {
   padding: 5vmin 13.65vw !important;
 }
 
-.goods-container {
-  padding: 0px 7.45vw 0px 0px !important;
-}
-
 .box.wide {
   height: min-content;
   margin-right: 0px !important;

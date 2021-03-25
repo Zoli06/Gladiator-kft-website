@@ -1,8 +1,10 @@
+<?php include('./modules/network_header.php') ?>
 <!DOCTYPE html>
 <html>
 
 <?php
 $subpage = true;
+$title = 'Árlista';
 $extraCss = './css/pricelist.css';
 $extraJs = './js/pricelist.js';
 include('./modules/head.php');
@@ -89,11 +91,11 @@ include('./modules/head.php');
 
           for ($i = 0; $i != count($goods); $i++) {
             echo ('<div class="box ' . getLast($i, $goods) . '">
-            <h3>' . $goods[$i] . '</h3>
+            <h3>' . htmlspecialchars($goods[$i]) . '</h3>
             <div class="img-container">
-              <img src="' . './goods/' . $selected . '/' . $goods[$i] . '/image.png' . '" />
+              <img alt="' . htmlspecialchars($goods[$i]) . '" src="' . './goods/' . htmlspecialchars($selected) . '/' . htmlspecialchars($goods[$i]) . '/image.png' . '" />
             </div>
-            <p><span>' . file_get_contents($mainDir2 . "/" . $goods[$i] . "/price.txt") . '</span> ft/nap</p>
+            <p><span>' . htmlspecialchars(file_get_contents($mainDir2 . "/" . $goods[$i] . "/price.txt")) . '</span> ft/nap</p>
           </div>');
           }
           ?>

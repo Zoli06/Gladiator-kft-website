@@ -1,11 +1,11 @@
-ErrorDocument 400 http://gladiator-gepkolcsonzo.infinityfreeapp.com/400.php
+ErrorDocument 400 http://gladiator-gepkolcsonzo.hu/error.php?code=400
 
-ErrorDocument 401 http://gladiator-gepkolcsonzo.infinityfreeapp.com/401.php
+ErrorDocument 401 http://gladiator-gepkolcsonzo.hu/error.php?code=401
 
-ErrorDocument 403 http://gladiator-gepkolcsonzo.infinityfreeapp.com/403.php
+ErrorDocument 403 http://gladiator-gepkolcsonzo.hu/error.php?code=403
 
-ErrorDocument 404 http://gladiator-gepkolcsonzo.infinityfreeapp.com/404.php
+ErrorDocument 404 http://gladiator-gepkolcsonzo.hu/error.php?code=404
 
-ErrorDocument 500 http://gladiator-gepkolcsonzo.infinityfreeapp.com/500.php
+ErrorDocument 500 http://gladiator-gepkolcsonzo.hu/error.php?code=500
 
-ErrorDocument 503 http://gladiator-gepkolcsonzo.infinityfreeapp.com/503.php
+ErrorDocument 503 http://gladiator-gepkolcsonzo.hu/error.php?code=503

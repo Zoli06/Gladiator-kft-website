@@ -1,8 +1,10 @@
+<?php include('./modules/network_header.php') ?>
 <!DOCTYPE html>
 <html>
 
 <?php
 $subpage = true;
+$title = 'Kölcsönzés';
 include('./modules/head.php');
 ?>
 

@@ -1,3 +1,4 @@
+<?php include('./modules/network_header.php') ?>
 <h1>Terms and Conditions</h1>
 <p>Last updated: February 07, 2021</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>

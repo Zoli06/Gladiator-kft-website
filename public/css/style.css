@@ -6,6 +6,7 @@
   --themeColor: #449368;
   --boxColor: #e8e8e8;
   --navFontSize: 1.25vw;
+  --headerLeftPadding: 13.65vw; 
 }
 
 * {
@@ -39,35 +40,53 @@ html {
 /*Header stlyes*/
 header {
   height: calc(100vh - var(--navHeight));
-  background-image: url("../images/901207_8bd1c85819534dcc81d9ce6a45f46797_mv2_d_4096_2160_s_2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: black;
+}
+
+header.subpage {
+  background-image: url("../images/background1.jpg");
+  background-position: 0% 60%;
+}
+
+header:not(.subpage) .background {
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0px;
+  left: calc(var(--headerLeftPadding) * -1);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
 }
 
 nav {
   position: sticky;
   height: var(--navHeight);
   background-color: var(--themeColor);
-  padding-left: 13.65vw;
+  padding-left: var(--headerLeftPadding);
   top: 0;
   z-index: 1;
 }
 
-nav a {
+nav div a {
   height: var(--navHeight);
-  display: inline-block;
+  display: inline-flex;
+  align-content: center;
   text-decoration: none;
   padding: 0 2.5vw;
-  margin-right: -5px; /*Deee miiiééért????*/
+  margin-right: -5px;
 }
 
-nav a.active,
-nav a:hover {
+nav div a.active,
+nav div a:hover {
   background-color: var(--hoverColor);
 }
 
-nav p {
+nav div a p {
+  height: var(--navHeight);
   line-height: var(--navHeight);
   font-weight: bold;
   font-size: var(--navFontSize);
@@ -75,15 +94,22 @@ nav p {
 }
 
 header div {
-  margin-left: 13.65vw;
-  padding-top: 9.26vh;
+  margin-left: var(--headerLeftPadding);
   font-weight: bold;
   color: white;
 }
 
+header:not(.subpage) div {
+  position: fixed;
+} 
+
 header div h1 {
   font-size: 5vmin;
   font-family: "Helvetica";
+}
+
+header:not(.subpage) div h1 {
+  margin-top: 9.26vh;
 }
 
 header div p {
@@ -123,9 +149,12 @@ section {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   padding: 8.52vmin;
+  background-color: white;
+  position: relative;
 }
 
-section, .hole-container {
+section,
+.hole-container {
   min-height: calc(100vh - 25vmin - var(--navHeight) * 2);
 }
 
@@ -210,6 +239,8 @@ section h2 a {
   height: 60%;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .box img,
@@ -307,6 +338,7 @@ iframe {
 /* Track */
 .scrollable-machine-container .box-container::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 0.5vmin;
 }
 
 /* Handle */
@@ -332,11 +364,30 @@ textarea {
   resize: none;
 }
 
-.email p {
+.email p:not(.completed-status) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   text-align: center !important;
+}
+
+.completed-status {
+  position: static !important;
+  width: fit-content !important;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px !important;
+  margin-top: 2vmin;
+}
+
+.completed-status img {
+  height: 4vmin;
+  margin-right: 1vmin;
+}
+
+.completed-status span {
+  line-height: 4vmin;
+  font-size: 2.5vmin;
 }
 
 .email p span {
@@ -348,12 +399,17 @@ textarea {
   flex-direction: column;
 }
 
-.email p span.second, .email p span.fourth {
+.email p span.second,
+.email p span.fourth {
   margin-left: 2%;
 }
 
 .email p span.second textarea {
   height: 100%;
+}
+
+.completed-status p {
+  float: left;
 }
 
 .wide-div.last {
@@ -365,9 +421,23 @@ input[type="reset"] {
   margin-top: 2vmin;
 }
 
-@media only screen and (max-width: 900px) {
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media screen and (max-width: 800px) {
   .email p {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .email p span {
@@ -380,8 +450,42 @@ input[type="reset"] {
   }
 
   header div a button p {
-    font-size: 1.75vmin !important;
+    font-size: 2.75vmin !important;
   }
+
+  header div h1 {
+    font-size: 8vmin !important;
+  }
+
+  header div p {
+    font-size: 4vmin !important;
+  }
+
+  header div a button {
+    width: 35vmin !important;
+    height: 7.5vmin !important;
+  }
+
+  nav p {
+    font-size: calc(var(--navFontSize) + 0.75vw) !important;
+  }
+
+  nav,
+  nav div a,
+  nav div a p,
+  footer {
+    height: calc(var(--navHeight) * 1.5) !important;
+  }
+
+  nav div a p,
+  footer p {
+    line-height: calc(var(--navHeight) * 1.5);
+    font-size: calc(var(--navFontSize) * 1.5) !important;
+  }
+}
+
+.default-card {
+  max-height: 125px !important;
 }
 
 /*Footer styles*/

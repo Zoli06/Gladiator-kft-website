@@ -1,12 +1,129 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <meta name="description" content="Gépkölcsönzés Budapest 4. kerület" />
+  <meta name="author" content="Gladiátor Team Kft.">
+  <meta name="keywords"
+		content="gépkölcsönzés,
+            kölcsönző,
+            gépkölcsönző,
+            kisgépkölcsönzés,
+            kisgépkölcsönző,
+            gépkölcsönző budapest,
+            gépkölcsönző újpest,
+            gépkölcsönzés budapest,
+            gépkölcsönzés újpest,
+            gladiátor team,
+            bérlés,
+            szerszám bérlés,
+            kisgépkölcsönzõ újpest,
+            gép bérlés,
+            4 ker,
+            13 ker,
+            4 kerület,
+            13 kerület,
+            4. ker,
+            13. ker,
+            4. kerület,
+            13. kerület,
+            ipari,
+            ipari gép,
+            ipari gép kölcsönzés,
+            ipari gép bérlés,
+            gladiátor gépköcsönző,
+            betonkeverő,
+            betonkeverő kölcsönzés,
+            betonkeverő bérlés,
+            tárcsa,
+            tárcsa vásárlás,
+            tárcsa árak,
+            tárcsa ár,
+            földmunka,
+            famegmunkálás,
+            kerti gépek,
+            betonozástechnika,
+            betonozás,
+            fúrógép,
+            fúrógép kölcsönzés,
+            fúrógép bérlés,
+            vésőgép,
+            véső,
+            vésőgép kölcsönzés,
+            véső kölcsönzés,
+            vésőgép bérlés,
+            kertészeti gépek,
+            körfúrész,
+            körfürész kölcsönzés,
+            körfürész bérlés,
+            fűkasza,
+            fűkasza kölcsönzés,
+            fűkasza bérlés
+            szivattyú,
+            szivattyú kölcsönzés,
+            szivattyú bérlés,
+            döngölő,
+            döngölő kölcsönzés,
+            döngölő bérlés,
+            flex,
+            flex kölcsönzés,
+            flex bérlés,
+            áramfejlesztő,
+            áramfejlesztő kölcsönzés,
+            áramfejlesztő bérlés,
+            generátor,
+            generátor kölcsönzés,
+            generátor bérlés,
+            dekopir,
+            dekopir kölcsönzés,
+            dekopir bérlés,
+            gyalu,
+            gyalu kölcsönzés,
+            gyalu bérlés,
+            parketta csiszoló,
+            parketta csiszoló kölcsönzés,
+            parketta csiszoló bérlés,
+            parkettacsiszoló,
+            parkettacsiszoló kölcsönzés,
+            parkettacsiszoló bérlés,
+            betoncsiszoló,
+            betoncsiszoló kölcsönzés,
+            betoncsiszoló bérlés,
+            betonkeverő,
+            betonkeverő kölcsönzés,
+            betonkeverő bérlés,
+            fúrógép,
+            fúrógép kölcsönzés,
+            fúrógép bérlés,
+            vésőgép,
+            vésőgép kölcsönzés,
+            vésőgép bérlés,
+            bontókalapács,
+            bontókalapács kölcsönzés,
+            bontókalapács bérlés,
+            inverter,
+            inverter kölcsönzés,
+            inverter bérlés,
+            hegesztő,
+            hegesztő kölcsönzés,
+            hegesztő bérlés,
+            hegesztőgép,
+            hegesztőgép kölcsönzés,
+            hegesztőgép bérlés,
+            lapvibrátor,
+            lapvibrátor kölcsönzés,
+            lapvibrátor bérlés,
+            porszívó,
+            porszívó kölcsönzés,
+            porszívó bérlés,
+            ipari porszívó,
+            ipari porszívó kölcsönzés,
+            ipari porszívó bérlés,
+            hőlégfúvó,
+            hőlégfúvó kölcsönzés,
+            hőlégfúvó bérlés,
+  "/>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/jquery.quickfit.js"></script>
   <?php
@@ -15,5 +132,7 @@
   if(isset($extraJs)) {echo('<script src="' . $extraJs . '"></script>');}
   ?>
   <script src="./js/app.js"></script>
-  <title>Gladiátor Team Kft.</title>
+  <title><?php if(isset($title)) {echo($title);} else {echo('Gladiátor Gépkölcsönző | Budapest 4. kerület');} ?></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
