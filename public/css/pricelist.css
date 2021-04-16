@@ -6,6 +6,7 @@ section .hole-container {
 
 .hole-container div h2 {
   margin-top: 5vmin;
+  font-size: 6vmin;
 }
 
 h2 {
@@ -91,23 +92,33 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .goods-container {
-    grid-template-columns: repeat(3, 1fr);
-    /*width: 47.2vw !important;*/
+  .page-menu {
+    padding-right: 0px !important;
+    border-right: 0px;
+    border-bottom: 1px solid #707070;
   }
 
-  .page-menu div {
-    width: 25vw;
+  .page-menu div .box {
+    width: 50vw;
   }
 
   .page-menu div .box p {
-    font-size: 2.3vw;
+    font-size: 14px;
     line-height: 4vw;
+    text-align: center;
+    width: auto;
     letter-spacing: .5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   section .hole-container {
-    grid-template-columns: 1.2fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
   }
 
   section div {
@@ -120,6 +131,10 @@ h2 {
 
   .goods-container .box {
     width: 17vw !important;
-    height: 22.5vw !important;
+    height: 30vmin !important;
+  }
+
+  .goods-container .box p {
+    font-size: 14px !important;
   }
 }

@@ -1,0 +1,8 @@
+{
+  "name": "Gladiátor Team Kft.",
+  "short_name": "Gladiátor Gépkölcsönző",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Gépkölcsönzés Budapest 4. kerület Váci út 59"
+}

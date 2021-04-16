@@ -1,6 +1,6 @@
 <?php include('./modules/network_header.php') ?>
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 
 <?php
 $subpage = true;

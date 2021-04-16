@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /map.php
+Disallow: /error.php
+Disallow: /README.md
+Disallow: /modules/
+Disallow: /fonts/
+Disallow: /!regi_weblap

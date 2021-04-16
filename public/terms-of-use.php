@@ -1,4 +1,36 @@
 <?php include('./modules/network_header.php') ?>
+<!DOCTYPE html>
+<html lang="en" stlye="width: 100vw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" color="#449368">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ipari gépek kölcsönzése, Budapest 4. kerület" />
+  <meta name="author" content="Gladiátor Team Kft." />
+  <meta property="og:title" content="Gladiátor Team Kft." />
+  <meta property="og:url" content="http://www.gladiator-gepkolcsonzo.hu" />
+  <meta property="og:image" content="http://gladiator-gepkolcsonzo.hu/images/background6.webp" />
+  <title>Felhasználási Feltételek</title>
+  <style>
+    li {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+  </style>
+</head>
+<body>
 <h1>Terms and Conditions</h1>
 <p>Last updated: February 07, 2021</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>
@@ -24,13 +56,13 @@
     <p><strong>Service</strong> refers to the Website.</p>
   </li>
   <li>
-    <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">Terms and Conditions Generator</a>.</p>
+    <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a rel="external nofollow noopener noreferrer" href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">Terms and Conditions Generator</a>.</p>
   </li>
   <li>
     <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
   </li>
   <li>
-    <p><strong>Website</strong> refers to Gladiátor Team Kft., accessible from <a href="http://www.gladiator-gepkolcsonzo.hu/" rel="external nofollow noopener" target="_blank">http://www.gladiator-gepkolcsonzo.hu/</a></p>
+    <p><strong>Website</strong> refers to Gladiátor Team Kft., accessible from <a href="http://www.gladiator-gepkolcsonzo.hu/" rel="external nofollow noopener noreferrer" target="_blank">http://www.gladiator-gepkolcsonzo.hu/</a></p>
   </li>
   <li>
     <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -83,12 +115,11 @@
     <p>By email: gladiatorteamkft@gmail.com</p>
   </li>
   <li>
-    <p>By visiting this page on our website: <a href="http://www.gladiator-gepkolcsonzo.hu/terms-of-use.php" rel="external nofollow noopener" target="_blank">http://www.gladiator-gepkolcsonzo.hu/terms-of-use</a></p>
+    <p>By visiting this page on our website: <a rel="external nofollow noopener noreferrer" href="http://www.gladiator-gepkolcsonzo.hu/terms-of-use.php" target="_blank">http://www.gladiator-gepkolcsonzo.hu/terms-of-use</a></p>
   </li>
   <li>
     <p>By phone number: +36309488021</p>
   </li>
-  <li>
-    <p>By mail: gladiatorteamkft@gmail.com</p>
-  </li>
 </ul>
+</body>
+</html>

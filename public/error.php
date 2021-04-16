@@ -1,10 +1,9 @@
 <?php include('./modules/network_header.php') ?>
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 
 <?php
 $subpage = true;
-$title = 'Hiba';
 include('./modules/head.php');
 ?>
 
@@ -16,7 +15,7 @@ include('./modules/head.php');
   include('./modules/header.php');
   ?>
   <section>
-    <div class="wide-div last">
+    <div class="wide-div last error">
       <h2>
         <?php
         $valid_codes = array(
@@ -84,7 +83,7 @@ include('./modules/head.php');
         }
         ?>
       </h2>
-      <div class="box wide">
+      <div class="box wide error">
         <h3>Ahol a madár se jár..</h3>
         <p>Ha a hiba nem szűnik meg hamarosan, kérlek jelezd nekünk e-mailben!</p>
       </div>

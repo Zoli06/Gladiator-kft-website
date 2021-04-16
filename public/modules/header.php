@@ -1,11 +1,11 @@
-<header <?php if($subpage) echo('class="subpage"')?> >
+<header <?php if($subpage) echo('id="subpage"')?> >
   <div>
     <h1><?php echo ($text); ?></h1>
     <?php
     if (!$subpage) {
-      echo ('<p>
-      Köszöntjük weboldalunkon!
-    </p>
+      echo ('<h2>
+      Építőipari és kertészeti gépek bérbe adása és javítása
+    </h2>
     <a href="./pricelist.php">
       <button>
         <p>Árlista</p>
@@ -15,9 +15,8 @@
     }
     ?>
   </div>
-  <!--<div class="background" style="background-image: url('../images/background2.jpg')"></div>-->
   <?php
-    /*for($pictures = 6, $i = 1; $i <= $pictures; $i++) {
+    /*for($pictures = 5, $i = 1; $i <= $pictures; $i++) {
       echo('<div class="background" style="background-image: url(\'../images/background' . $i .'.webp\')"></div>');
     }*/
   ?>
